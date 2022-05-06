@@ -1,1 +1,19 @@
-<p>layout works!</p>
+<h2>RouterLink State Issue</h2>
+
+<button routerLink="routed-button" [state]="state">
+  Button
+</button>
+
+<br/>
+
+<a routerLink="routed-anchor" [state]="state">
+  Anchor
+</a>
+
+<br/>
+
+<button (click)="onNavigate()">
+  Navigate
+</button>
+
+<router-outlet></router-outlet>
